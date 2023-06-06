@@ -22,7 +22,7 @@ let pageData = {
 };
 
 // API CALLS
-const getUsers = () => fetch(`${import.meta.env.WHATS_COOKIN_API}/api/v1/users`)
+const getUsers = () => fetch(`${process.env.WHATS_COOKIN_API}/api/v1/users`)
 const getRecipes = () => fetch(`${process.env.WHATS_COOKIN_API}/api/v1/recipes`)
 const getIngredients = () => fetch(`${process.env.WHATS_COOKIN_API}/api/v1/ingredients`)
 const updateRecipe = (userID, recipeID, request) => {

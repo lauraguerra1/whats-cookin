@@ -3,10 +3,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   plugins: [
-    new Dotenv({
-      prefix: 'import.meta.env.',
-      path: './.env'
-    })
+    new Dotenv()
   ],
   "mode": "none",
   "entry": "./src/scripts.js",
