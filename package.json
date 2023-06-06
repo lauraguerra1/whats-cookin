@@ -4,6 +4,7 @@
   "description": "Starter kit for Turing FE2 paired project",
   "main": "index.js",
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "start": "webpack server",
     "build": "webpack",
     "test": "mochapack 'test/**/*.js'"
