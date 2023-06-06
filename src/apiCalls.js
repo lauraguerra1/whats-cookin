@@ -31,7 +31,7 @@ const updateRecipe = (userID, recipeID, request) => {
     recipeID
   };
 
-  return fetch('http://localhost:3001/api/v1/usersRecipes', {
+  return fetch(`${config.WHATS_COOKIN_API}/api/v1/usersRecipes`, {
     method: `${request}`,
     body: JSON.stringify(body),
     headers: {
@@ -70,7 +70,7 @@ const handleRecipeData = recipes => {
 const handleIngredientData = ingredients => pageData.allIngredients = ingredients
 
 const patchHits = (recipe) => {
-  fetch('http://localhost:3001/api/v1/recipeHits', {
+  fetch(`${config.WHATS_COOKIN_API}/api/v1/recipeHits`, {
     method: 'PATCH',
     body: JSON.stringify({recipeID: recipe.id}),
     headers: {
