@@ -11,7 +11,7 @@ import {
  } from "./domUpdates";
 import { copyItem } from "./helper-functions";
 import { populateTags } from './recipes';
-// import { config } from "../config.js"
+import { config } from "../config.js"
 
 // DATA MODEL 
 let currentUser;
@@ -22,9 +22,9 @@ let pageData = {
 };
 
 // API CALLS
-const getUsers = () => fetch('http://localhost:3001/api/v1/users')
-const getRecipes = () => fetch('http://localhost:3001/api/v1/recipes')
-const getIngredients = () => fetch(`http://localhost:3001/api/v1/ingredients`)
+const getUsers = () => fetch(`${config.WHATS_COOKIN_API}/api/v1/users`)
+const getRecipes = () => fetch(`${config.WHATS_COOKIN_API}/api/v1/recipes`)
+const getIngredients = () => fetch(`${config.WHATS_COOKIN_API}/api/v1/ingredients`)
 const updateRecipe = (userID, recipeID, request) => {
   const body = {
     userID,
