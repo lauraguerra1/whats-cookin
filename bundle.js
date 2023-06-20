@@ -1441,7 +1441,7 @@ const getChatGPTRecipePitches = (allRecipes) => {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + String(_config_js__WEBPACK_IMPORTED_MODULE_4__.config.OPENAI_API_KEY),
+        Authorization: 'Bearer ' + String(secrets.CHAT_GPT_KEY),
         organization: 'org-47g2m7vnC6yUKCbIL0f7PSFb'
     },
   };
