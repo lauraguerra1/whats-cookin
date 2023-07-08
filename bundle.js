@@ -1345,7 +1345,7 @@ const isAIEnabled = () => {
   return flagsmith__WEBPACK_IMPORTED_MODULE_5___default().init({
     environmentID:"KwbANkgyknoDMJgQ4YWxuR",
     onChange: () => {
-        aiEnabled = flagsmith__WEBPACK_IMPORTED_MODULE_5___default().getState("ai_recipe_pitches").flags.ai_recipe_pitches.value;
+        aiEnabled = flagsmith__WEBPACK_IMPORTED_MODULE_5___default().getState("ai_recipe_pitches").flags.ai_recipe_pitches.enabled;
     }
   });
 }
@@ -1443,7 +1443,7 @@ const getChatGPTRecipePitches = (allRecipes) => {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + String(aiEnabled),
+        Authorization: 'Bearer ' + flagsmith__WEBPACK_IMPORTED_MODULE_5___default().getState("ai_recipe_pitches").flags.ai_recipe_pitches.value,
         organization: 'org-47g2m7vnC6yUKCbIL0f7PSFb'
     },
   };
