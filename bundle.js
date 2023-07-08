@@ -1337,14 +1337,15 @@ const handleRecipeData = recipes => {
     } else {
       preparePageRender();
     }
-  });
+  }
+  );
 }
 
 const isAIEnabled = () => {
   return flagsmith__WEBPACK_IMPORTED_MODULE_5___default().init({
     environmentID:"KwbANkgyknoDMJgQ4YWxuR",
     onChange: () => {
-        aiEnabled = flagsmith__WEBPACK_IMPORTED_MODULE_5___default().getState("ai_recipe_pitches").flags.ai_recipe_pitches.enabled;
+        aiEnabled = flagsmith__WEBPACK_IMPORTED_MODULE_5___default().getState("ai_recipe_pitches").flags.ai_recipe_pitches.value;
     }
   });
 }
@@ -1442,7 +1443,7 @@ const getChatGPTRecipePitches = (allRecipes) => {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + String(secrets.CHAT_GPT_KEY),
+        Authorization: 'Bearer ' + String(aiEnabled),
         organization: 'org-47g2m7vnC6yUKCbIL0f7PSFb'
     },
   };
@@ -1690,7 +1691,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "config": () => (/* binding */ config)
 /* harmony export */ });
 const config = {
-  OPENAI_API_KEY: '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',
+  OPENAI_API_KEY: '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',
   WHATS_COOKIN_API: 'http://localhost:3001'
 }
 
