@@ -23,6 +23,7 @@ This is a recipe website that uses the fetch API to display information about a 
 
 
 ## Installation Instructions 
+- View the [live app here](https://lauraguerra1.github.io/whats-cookin/)!
 - In order for this application to function, it will require accessing both our backend server repository as well as our front-end repository. 
 
 ### Server Setup
