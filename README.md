@@ -2,12 +2,20 @@
 <div align="center">
 <b>Built With:</b>
 <br>
-Javascript | HTML | CSS | REST API
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> 
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+ <img src="https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white" /> 
+ <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white" />
 <br>
 <em>Testing Technologies:</em>
 <br>
- Mocha & Chai 
-
+<img src="https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white" />
+<img src="https://img.shields.io/badge/chai-A30701?style=for-the-badge&logo=chai&logoColor=white" />
+<br>
+ 
+[DEPLOYED LINK](https://lauraguerra1.github.io/whats-cookin/)
 </div>
 
 ## Abstract: 
@@ -22,8 +30,20 @@ This is a recipe website that uses the fetch API to display information about a 
 - Testing was implemented with the Mocha framework and Chai library. 
 
 
+## Preview of App:
+
+### Cell Phone Display: 
+
+
+![whats cookin gif for cell phone](https://user-images.githubusercontent.com/121131581/243466673-6b7b8534-feb7-4e0e-82b3-30c5ae89a772.gif)
+
+<br>
+
+### Desktop Display:
+
+![whats-cookin gif](https://user-images.githubusercontent.com/121131581/243463414-55dc4ba2-79a0-40f6-8642-09d9001f66b3.gif)
+
 ## Installation Instructions 
-- View the [live app here](https://lauraguerra1.github.io/whats-cookin/)!
 - In order for this application to function, it will require accessing both our backend server repository as well as our front-end repository. 
 
 ### Server Setup
@@ -43,20 +63,6 @@ This is a recipe website that uses the fetch API to display information about a 
 - Run the command: `npm install`
 - Run the command: `npm start`
 - Once the modules have finished compiling, enter `http://localhost:8080/` into your browser to see the live web page. 
-
-
-## Preview of App:
-
-### Cell Phone Display: 
-
-
-![whats cookin gif for cell phone](https://user-images.githubusercontent.com/121131581/243466673-6b7b8534-feb7-4e0e-82b3-30c5ae89a772.gif)
-
-<br>
-
-### Desktop Display:
-
-![whats-cookin gif](https://user-images.githubusercontent.com/121131581/243463414-55dc4ba2-79a0-40f6-8642-09d9001f66b3.gif)
 
 
 
